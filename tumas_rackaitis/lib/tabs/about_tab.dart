@@ -1,8 +1,8 @@
 import 'package:tumas_rackaitis/config/assets.dart';
 import 'package:tumas_rackaitis/config/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:tumas_rackaitis/widgets/widgets.dart';
 import 'dart:html' as html;
-
 import '../widgets/theme_inherited_widget.dart';
 
 class AboutTab extends StatelessWidget {
@@ -95,9 +95,9 @@ class AboutTab extends StatelessWidget {
                     label: Text('Linkedin'),
                     onPressed: () => html.window
                         .open(Constants.PROFILE_LINKEDIN, 'Tumas Rackaitis'),
-                  )
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
