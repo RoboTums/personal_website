@@ -40,11 +40,11 @@ class _HomePageState extends State<HomePage> {
               title: Text('About'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.chrome_reader_mode),
+              icon: Icon(Icons.dashboard),
               title: Text('Blog'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.mobile_screen_share),
+              icon: Icon(Icons.assessment),
               title: Text('Projects'),
             )
           ],

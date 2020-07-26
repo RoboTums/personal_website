@@ -6,7 +6,7 @@ class Assets{
   static const linkedin = 'assets/linkedin.png';
   static const medium = 'assets/medium.png';
   static const medium_light = 'assets/medium_light.png';
-  static const kaggle = 'kaggle.png';
+  static const kaggle = 'assets/kaggle.png';
   static const car_accident = "assets/car_accident.jpg";
   static const fantasy_football = 'assets/footbal2.jpg';
   static const sports_prediction = 'assets/fantasyfootballai.jpg';
