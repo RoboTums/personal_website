@@ -1,7 +1,8 @@
 
 import 'package:tumas_rackaitis/models/project_model.dart';
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
+import 'package:url_launcher/url_launcher.dart';
+
 class ProjectWidget extends StatelessWidget {
   final Project _project;
   final double _bottomPadding;
@@ -62,9 +63,13 @@ class ProjectWidget extends StatelessWidget {
     );
   }
 
-  void onProjectClick(){
-      if(_project.link!=null)
-       html.window.open(_project.link, 'adityadroid'); 
+  void onProjectClick() async {
+      if(await canLaunch(_project.link)){
+       await launch(_project.link); 
+    }
+    else{
+          throw 'Could not launch ${_project.link}';
     }
 
+}
 }
