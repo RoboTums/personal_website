@@ -16,4 +16,9 @@ class Assets{
   static const rec3 = 'assets/recommenderSYs3.jpg';
   static const sentiment_analysis = 'assets/sentiment_analysis.png';
   static const find_peeple = 'assets/yolo_v2.jpg';
+  static const appfolio = 'assets/appfolio_logo.png';
+  static const oberlin = 'assets/oberlin_logo.jpg';
+  static const hallsten = 'assets/hallsten.jpeg';
+  static const zircoa = 'assets/zircoa.png';
+
 }

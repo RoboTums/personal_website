@@ -15,9 +15,23 @@ class AboutTab extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
-                radius: 100,
-                backgroundImage: Image.asset(Assets.avatar).image,
+              Stack(
+                alignment: Alignment.center,
+                children: <Widget>[
+                  ClipOval(
+                      child: Container(
+                    width: 240.0,
+                    height: 240.0,
+                    decoration: new BoxDecoration(
+                      color: Colors.lightBlueAccent,
+                      shape: BoxShape.circle,
+                    ),
+                  )),
+                  CircleAvatar(
+                    radius: 100,
+                    backgroundImage: Image.asset(Assets.avatar).image,
+                  ),
+                ],
               ),
               SizedBox(
                 height: 20,
