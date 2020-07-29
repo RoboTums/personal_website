@@ -10,11 +10,11 @@ final List<Project> projects = [
       link:
       'https://github.com/RoboTums/ReviewSentimentAnalysis'),
   Project(
-      name: 'Recommender Systems Tutorials',
-      image: Assets.rec1,
+      name: 'TSP Math Art',
+      image: Assets.shasta_tsp,
       description:  
-      'Tutorials for learning recommender systems',
-      link: 'https://github.com/RoboTums/RecommenderSystemsOverview'),
+      'Easy to use repository to generate TSP art in python.',
+      link: 'https://github.com/RoboTums/PyTSPArt'),
   Project(
       name: 'Data Analysis of US Car Accidents',
       image: Assets.car_accident,

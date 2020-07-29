@@ -11,7 +11,7 @@ class Assets{
   static const fantasy_football = 'assets/footbal2.jpg';
   static const sports_prediction = 'assets/fantasyfootballai.jpg';
   static const mathematical_programming = 'assets/optimizationw.jpg';
-  static const rec1 = 'assets/recommender_systems_tutorial.jpg';
+  static const shasta_tsp = 'assets/shastaTsp.png';
   static const rec2 = 'assets/recommender2.jpg';
   static const rec3 = 'assets/recommenderSYs3.jpg';
   static const sentiment_analysis = 'assets/sentiment_analysis.png';

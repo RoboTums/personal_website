@@ -30,7 +30,7 @@ class _MyHomePageState extends State<InfoTab> {
           padding: padding,
           child: new InkWell(
             onTap: () {
-              setState(() => selected_info=index);
+              setState(() => selected_info = index);
             },
             child: new Container(
               decoration: new BoxDecoration(
@@ -41,13 +41,12 @@ class _MyHomePageState extends State<InfoTab> {
                       color: Colors.black.withAlpha(70),
                       offset: const Offset(3.0, 10.0),
                       blurRadius: 15.0)
-                ], image: new DecorationImage(
-                  image: new ExactAssetImage(
-                      '${personalInfo[index].image}'),
+                ],
+                image: new DecorationImage(
+                  image: new ExactAssetImage('${personalInfo[index].image}'),
                   fit: BoxFit.fill,
                 ),
               ),
-//                                    height: 200.0,
               width: 200.0,
               child: new Stack(
                 children: <Widget>[
@@ -79,7 +78,6 @@ class _MyHomePageState extends State<InfoTab> {
       },
       scrollDirection: Axis.horizontal,
       itemCount: personalInfo.length,
-
     );
 
     final body = new Scaffold(
@@ -104,74 +102,74 @@ class _MyHomePageState extends State<InfoTab> {
                         padding: new EdgeInsets.only(left: 8.0),
                         child: new Text(
                           'My Work and Other Experiences',
-                          
                         )),
                   ),
                   new Container(
-                      height: 300.0, width: _width, child: headerList),
+                      height: 250.0, width: _width, child: headerList),
                   new Expanded(
                       child: ListView.builder(
-                        itemCount: personalInfo[selected_info].descriptions.length,
-                        itemBuilder: (context, bottom_index) {
-                    return new ListTile(
-                      title: new Column(
-                        children: <Widget>[
-                          new Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              new Container(
-                                height: 72.0,
-                                width: 72.0,
-                                decoration: new BoxDecoration(
-                                    
-                                    borderRadius: new BorderRadius.all(
-                                        new Radius.circular(12.0)),
-                                    image: new DecorationImage(
-                                      image: new ExactAssetImage(
-                                        '${personalInfo[selected_info].image}',
+                          itemCount:
+                              personalInfo[selected_info].descriptions.length,
+                          itemBuilder: (context, bottom_index) {
+                            return new ListTile(
+                              title: new Column(
+                                children: <Widget>[
+                                  new Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      new Container(
+                                        height: 72.0,
+                                        width: 72.0,
+                                        decoration: new BoxDecoration(
+                                            borderRadius: new BorderRadius.all(
+                                                new Radius.circular(12.0)),
+                                            image: new DecorationImage(
+                                              image: new ExactAssetImage(
+                                                '${personalInfo[selected_info].image}',
+                                              ),
+                                              fit: BoxFit.cover,
+                                            )),
                                       ),
-                                      fit: BoxFit.cover,
-                                    )),
-                              ),
-                              new SizedBox(
-                                width: 8.0,
-                              ),
-                              new Expanded(
-                                  child: new Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  new Text(
-                                    '${personalInfo[selected_info].descriptions[bottom_index]}',
-                                  
+                                      new SizedBox(
+                                        width: 20.0,
+                                      ),
+                                      new Expanded(
+                                          child: new Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          new Text(
+                                            '${personalInfo[selected_info].descriptions[bottom_index]}',
+                                          ),
+                                          //It is possible to add another text widget here.
+                                        ],
+                                      )),
+                                      new Expanded(
+                                          child: new Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        children: <Widget>[
+                                          new Text(
+                                            "Skills Developed:",
+                                          ),
+                                          new Text(
+                                            '${personalInfo[selected_info].skills[bottom_index]}',
+                                            textAlign: TextAlign.center,
+                                          )
+                                        ],
+                                      )),
+                                    ],
                                   ),
-                            //It is possible to add another text widget here.
+                                  new Divider(),
                                 ],
-                              )),
-                              new Expanded(
-                                  child: new Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: <Widget>[
-                                  new Text(
-                                    "Skills Developed:",
-                                  
-                                  ),
-                                  new Text(
-                                    '${personalInfo[selected_info].skills[bottom_index]}',
-                                    textAlign: TextAlign.center,
-                                    
-                                  )
-                                ],
-                              )),
-                              
-                            ],
-                          ),
-                          new Divider(),
-                        ],
-                      ),
-                    );
-                  }))
+                              ),
+                            );
+                          }))
                 ],
               ),
             ),
