@@ -1,6 +1,6 @@
 # My personal website
 
-# Visit it @ [tumasr.ai](tumasr.ai)
+# Visit it @ [tumasr.ai](http://www.tumasr.ai)
 
 Some features:
 
