@@ -26,5 +26,5 @@ Some features:
 
 5. Start editing out my personal info in place of yours!
 
-If you end up using it as a template, show your thanks by buying me a cup of coffee:
-venmo: 
+### If you end up using it as a template, show your thanks by buying me a cup of coffee:
+venmo: @Tumas-Rackaitis
