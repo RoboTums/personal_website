@@ -42,11 +42,11 @@ final List<Project> projects = [
       link:
       'https://github.com/RoboTums/sportsPrediction'),
   Project(
-      name: 'MindPair',
-      image: Assets.sports_prediction,
+      name: 'Tumasr.ai',
+      image: Assets.duck,
       description:
-      'Won Second Place at Oberlin Start Up Hackathon, an app to help recommend online college courses by resume.',
-      link: 'https://github.com/RoboTums/OberlinStartUpWeek'),
+      'This Web App, written in Dart with the Flutter Framework. Its availible to use by anyone as a template.',
+      link: 'https://github.com/RoboTums/personal_website'),
   Project(
       name: 'Book Recommendation System Tutorial',
       image: Assets.rec2,
@@ -55,9 +55,9 @@ final List<Project> projects = [
       link:
       'https://www.kaggle.com/robottums/probabalistic-matrix-factorization-with-suprise'),
   Project(
-      name: 'Hybrid Recommender System Tutorial',
-      image: Assets.rec3,
+      name: 'Cyber Attack Agent System Simulation App',
+      image: Assets.agent_systems,
       description:
-      'Tutorial on how to combine the results from many recommendation algorithms to improve recommendations, on 30 million rows.',
-      link: 'https://www.kaggle.com/robottums/hybrid-recommender-systems-with-surprise'),
+      "App that provides vizualizations of simulations regarding multi-agent systems in cybersecurity.",
+      link: 'https://trackait.shinyapps.io/oasysviz/'),
 ];
